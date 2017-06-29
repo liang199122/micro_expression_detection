@@ -18,6 +18,7 @@ print("[INFO] camera sensor warming up...")
 vs = VideoStream(0).start()
 time.sleep(2.0)
 
+# add some commit for test git
 # loop over the frames from the video stream
 while True:
     # grab the frame from the threaded video stream, resize it to

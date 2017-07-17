@@ -5,8 +5,10 @@ import imutils
 import time
 import dlib
 import cv2
+import numpy as np
 
-datpath = "shape_predictor_68_face_landmarks.dat"
+
+datpath = "extra_file/shape_predictor_68_face_landmarks.dat"
 # initialize dlib face detector (HOG-based) and then create
 # the facial landmark predictor
 print("[INFO] loading facial landmark predictor...")
@@ -18,9 +20,6 @@ print("[INFO] camera sensor warming up...")
 vs = VideoStream(0).start()
 time.sleep(2.0)
 
-# add some commit for test git
-# add commit for test2 git
-# git test3
 # loop over the frames from the video stream
 while True:
     # grab the frame from the threaded video stream, resize it to
